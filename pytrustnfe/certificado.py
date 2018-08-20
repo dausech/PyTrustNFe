@@ -35,11 +35,11 @@ def save_cert_key(cert, key):
     cert_temp = '/tmp/' + uuid4().hex
     key_temp = '/tmp/' + uuid4().hex
 
-    arq_temp = open(cert_temp, 'w')
+    arq_temp = open(cert_temp, 'wb')
     arq_temp.write(cert)
     arq_temp.close()
 
-    arq_temp = open(key_temp, 'w')
+    arq_temp = open(key_temp, 'wb')
     arq_temp.write(key)
     arq_temp.close()
 
